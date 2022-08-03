@@ -56,10 +56,10 @@ ROI analysis:
 
 Inputs (required*):
 	- mask_file*		: raw image file containing tissue masks
-	- img_dims*			: list containing image dimensions
+	- img_dims*		: list containing image dimensions
 	- index			: list containing mask index (if given, must have label for every ROI)
 	and either*
-	- dwi_fits			: 4D numpy array containing parametric fits (output from diffusion_fits() )
+	- dwi_fits		: 4D numpy array containing parametric fits (output from diffusion_fits() )
 	or
 	- ADCMaps_file		: raw image file of ADC maps
 	- KurtosisMaps_file	: raw image file of kurtosis index maps

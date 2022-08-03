@@ -21,7 +21,7 @@ Image reconstruction:
 reconstruct_radial_DWIs():
 Inputs (* required):
 	- input_file*		: k-space data file
-	- img_dim*			: list containing image dimensions
+	- img_dim*		: list containing image dimensions
 	- kspace_dim*		: list containing k-space dimensions
 Output:
 	- dwis 			: a numpy array of the reconstructed DWIs
@@ -31,14 +31,14 @@ Output:
 Parametric fitting:
 - diffusion_fits() can be run using either a variable in the current runtime containing the DWIs (the output of reconstruct_radial_DWIs() ) or from raw image files in the working directory
 Inputs (* required):
-	- b_array* 			: a numpy array containing the b-values of the DWIs
+	- b_array* 		: a numpy array containing the b-values of the DWIs
 	- SNR_threshold		: minimum SNR to be identified as "not background" and thus fitted
 	- noise_region		: region to be defined as "noise" [x1,x2,y1,y2]; top left corner by default
 	and either*
 	- dwis			: a numpy array containing the DWIs
 	or
 	- input_file		: raw image file containing DWIs in working directory
-	- img_dims			: list containing image dimensions
+	- img_dims		: list containing image dimensions
 Outputs:
 	- dwi_fits: 4D numpy array containing parametric fits and fitting information
 		dwi_fits[0,:,:,:] : ADC maps

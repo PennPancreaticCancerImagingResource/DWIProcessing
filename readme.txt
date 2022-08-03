@@ -54,7 +54,7 @@ ROI analysis:
 - ROI_analysis() can be run using either a varible in the current runtime containing the parametric fits (the output of diffusion_fit() ) or from raw image files in the working directory
 - The mask file is a raw, 8-bit image file of the same dimensions as a DWI (ie. [slices, yres, xres]), where non-ROI voxels = 0 and ROIs are integers starting at 1.
 
-Inputs (required*):
+Inputs (* required):
 	- mask_file*		: raw image file containing tissue masks
 	- img_dims*		: list containing image dimensions
 	- index			: list containing mask index (if given, must have label for every ROI)
